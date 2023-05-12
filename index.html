@@ -12,19 +12,14 @@
         <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
 </head>
 <body class="">
-    
-    <header>
-        
-        
-    </header>
 
+<!--    DEBUT    Menu sticky -->
+    <main class="d-flex m-0 p-0 bg-secondary text-white">
 
-    <main class="main bg-secondary text-white">
-
-        <div class="container principal">
+        <div class="container principal justify-content-center">
             
-            <nav class="navbar sticky-top bg-secondary ">
-                <ul class="nav h2 ">
+            <nav class="navbar flex-row align-items-stretch sticky-top bg-secondary ">
+                <ul class="nav flex-row align-items-center h2 ">
                     <li class="nav-item ">
                     <a class="nav-link active text-white" aria-current="page" href="#">Ma Bio</a>
                     </li>
@@ -42,17 +37,16 @@
                     </li>
                 </ul>
             </nav>
+<!--    DEBUT    Menu sticky -->
             
-            
+<!--    DEBUT    Titre et biographie -->
                 <h1 class="display-1 p-2">Développeur Intégrateur Web</h1>
                 <p class="p-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore magnam numquam fuga fugiat necessitatibus. Laborum natus aliquam blanditiis! Est aperiam molestiae eligendi atque voluptas beatae ad pariatur eius placeat quod?</p>
+<!--    FIN    Titre et biographie -->
 
-                <hr>
-                
+                <hr><!-- ligne de séparation -->
 
-
-
-        
+<!--    DEBUT    Bloc experience -->    
             <div class="accordion p-2">    
                 <h2>Expériences professionnelles</h2>
                 <div class="accordion accordion-flush bg-secondary" id="accordionFlushExample">
@@ -80,7 +74,6 @@
                                 </div>
                             </div>
                         </div>
-
 
                     <div class="accordion-item bg-secondary">
                         <h2 class="accordion-header">
@@ -123,24 +116,79 @@
                     </div>
                 </div>
             </div>
-        
-            <hr>
+<!--    FIN    Bloc experience -->        
 
-            <div class="p-2">
-                <h2>Compétences</h2>
+            <hr><!-- ligne de séparation -->
+
+<!--    DEBUT    Bloc compétences -->
+            <h2 class="p-2">Compétences</h2>
+            <div class="block-competence d-flex p-2" >
+                <div class="" style="max-width: 40%;">
+                    <img src="" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur rem voluptates reprehenderit, necessitatibus eaque consequuntur sed ratione provident doloremque. Excepturi tempore, minima quae neque sit provident fugiat harum officia omnis?</p>
+                </div>
+                <div class="d-flex flex-column align-self-center align-items-center" style="min-width: 60%;">
+                    <h3>Languages</h3>
+                    <p class="mt-2">HTML / CSS / JavaScript / Bootstrap / Wordpress</p>
+                </div>
+                
             </div>
+<!--    FIN    Bloc compétences -->
 
+            <hr><!-- ligne de séparation -->
 
-
+<!--    DEBUT    Bloc projets -->
+            <div class="p-2">
+                <h2>Projets</h2>
+                <br>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Portfolio</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+<!--    FIN    Bloc projets -->
 
         </div>
 
-
-
-        <div class="sidebar sticky-top">
-            <div class="container iconSidebare sticky-top" style="padding: 1em;">
-                <div class="icon">
-                    <a href="https://github.com/MathissGit" target="_blank" class="github"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+<!--    DEBUT    Sticky Sidebar , icon link-->
+        <div class="sidebar m-0 top-0 sticky-top">
+            <div class="container iconSidebare d-flex justify-content-center sticky-top top-0">
+                <div class="icon d-flex flex-column">
+                    <a href="https://github.com/MathissGit" target="_blank" class="github mt-1 mb-1"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-github" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
                     </svg></a>
                     <a href="https://www.linkedin.com/in/mathis-sineux-a52a61254/" target="_blank" class="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -153,21 +201,10 @@
             </div>
 
         </div>
-
+<!--    FIN    Sticky Sidebar , icon link -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 </body>
 </html>
-
-<!-- menu burger 
-            <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-                <svg width="100" height="100" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-              </button>-->
-
-            
