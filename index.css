@@ -25,11 +25,7 @@ nav {
 
 /** Compétences **/
 
-
-
-
 /** Projets **/
-
 
 /**Sticky sidebar**/
 .sidebar {
@@ -40,9 +36,19 @@ nav {
   min-width: 2.2em;
   max-width: 5em;
 }
+.icon a:hover {
+  transform: rotate(5deg);
+}
 .iconSidebare {
   border-bottom: 1px solid white;
   border-left: 1px solid white;
   min-width: 100%;
   padding: 1em;
+}
+#Tcounter {
+  font-size: 1rem;
+}
+#counter {
+  font-size: 1rem;
+  /* filter: blur(50px) */
 }
